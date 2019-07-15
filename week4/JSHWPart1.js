@@ -2,7 +2,7 @@ window.onload = function(){
     
         console.log("fibonacci: " + fibonacci(0));
         console.log("fibonacci: " + fibonacci(1));
-        console.log("fibonacci: " + fibonacci(55));
+        console.log("fibonacci: " + fibonacci(10));
 
 
         console.log("bubbleSort: " + bubbleSort([2,4,5,1,3,1]));
@@ -35,7 +35,7 @@ function fibonacci(fibNumber){
         return 1;
     }
     else{
-        return (fibNumber - 1) + (fibNumber - 2);
+        return (fibonacci(fibNumber - 1)) + (fibonacci(fibNumber - 2));
     }
 }
 
